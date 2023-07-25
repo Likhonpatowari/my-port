@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+
+.section 
+
+{
+    @apply max-w-full mx-auto lg:px-24 md:px-16 px-6
+}
+.head
+{
+    @apply flex justify-between  items-center py-5  bg-sky-600
+}
+.logo
+{
+    @apply flex justify-center items-center gap-3
+}
+.logo img 
+{
+    @apply md:w-12 w-9
+}
+nav ul li 
+{
+    @apply hidden md:block
+}
+nav ul li a 
+{
+    @apply font-medium text-lg
+}
+.top-box 
+{
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-7 pt-10
+}
+
+.top-box .mid-top 
+{
+    @apply space-y-3
+}
+.btns 
+{
+    @apply py-3 flex justify-center items-center px-4 rounded-lg text-xl duration-300 hover:bg-teal-500 bg-teal-600  border-none hover:border  hover:border-teal-600
+}
+
+.home
+{
+    @apply md:py-10 pt-16
+}
+
+
+
+
+
+.details h2 
+{
+    @apply text-2xl text-teal-300 font-medium uppercase tracking-wide
+}
+.using  i 
+{
+    @apply text-2xl
+}
+.rating i 
+{
+    @apply text-xl  text-orange-300
+}
+
+
+
+.service-box
+{
+    @apply flex flex-col gap-2 border p-5 rounded-xl border-lime-300 max-w-[500px] max-h-[500px]
+}
+.service-box .img-bx
+{
+    @apply w-[250px] 
+}
+.service-box .img-bx img 
+{
+    @apply w-full
+}
+.details
+{
+    @apply space-y-2
+}
+.price
+{
+    @apply space-y-1 cursor-pointer
+}
+.price h2 
+{
+    @apply text-xl
+}
+
+.contact-container
+{
+    @apply flex flex-col lg:flex-row justify-between items-center
+}
+.left-contact ,
+.right-contact
+{
+    @apply  flex flex-col justify-center items-center
+}
+.right-contact .right-input 
+{
+    @apply space-y-4   flex flex-col justify-center items-center
+} 
+.input-bx 
+{
+    @apply md:w-[400px] w-[300px] flex  items-center gap-3 
+}
+.input-bx input ,
+textarea
+{
+    @apply w-full py-3 px-3 text-lg font-medium rounded-lg border-none outline-none 
+}
+textarea 
+{
+    @apply min-h-[130px] resize-none
+}
+.input-bx.btn 
+{
+    @apply relative 
+}
+.input-bx.btn  img ,
+.input-bx.btn  .btns
+{
+    @apply absolute 
+}
+.input-bx.btn  img
+{
+    @apply md:bottom-4 md:left-32 left-9 bottom-72
+}
+.input-bx.btn .btns 
+{
+    @apply left-20 top-3
+}
+
+
+
+
+@tailwind utilities;
